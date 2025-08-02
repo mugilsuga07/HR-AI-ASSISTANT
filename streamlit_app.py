@@ -1,7 +1,10 @@
-import os
-import streamlit as st
 import sys
+import os
+
+sys.path.append(os.path.abspath("src")) 
+
 from agent.graph import get_graph
+
 
 
 
