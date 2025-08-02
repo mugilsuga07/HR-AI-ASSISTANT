@@ -1,4 +1,9 @@
-langgraph>=0.1.0
-openai>=1.0.0
-python-dotenv>=1.0.0
-streamlit>=1.0.0  
+streamlit
+langchain
+langgraph
+openai
+python-dotenv
+fpdf
+langchain-community
+
+
