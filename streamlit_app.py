@@ -1,8 +1,8 @@
 import os
 import streamlit as st
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
 from agent.graph import get_graph
+
 
 
 st.set_page_config(page_title="Mugil - AI HR Assistant", layout="centered")
