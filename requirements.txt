@@ -1,9 +1,8 @@
 streamlit
 langchain
+langchain-openai
 langgraph
-openai
 python-dotenv
 fpdf
-langchain-community
-
+langchain-google-community
 
