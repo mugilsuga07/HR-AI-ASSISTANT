@@ -1,26 +1,37 @@
-Overview
-Mugil is an interactive, agentic AI-powered Streamlit application designed to help HR professionals automate the hiring plan for startup or tech roles.
+Mugil: AI-Powered Hiring Assistant
 
-This tool allows users to:
-Input one or more roles they want to hire
-Automatically clarify essential hiring details such as salary, skills, and timeline
-Generate high-quality job descriptions
-Create week-by-week hiring checklists
-Draft emails to kickstart the hiring process
-Built using LangGraph, OpenAI, and Streamlit.
+Mugil is an interactive, AI-driven tool designed to automate and streamline the hiring process for HR professionals, especially in startups and tech environments. Built with OpenAI and LangChain, and orchestrated via LangGraph, it generates job descriptions, hiring checklists, and recruitment emails through an intelligent, agentic workflow.
 
-Features
-Role-based job input (example: "I want to hire an AI Engineer")
-Smart clarifying questions for salary, skills, and timeline
-Markdown-based job descriptions
-Weekly hiring plan checklists
-Email generation for internal teams
-Streamlit UI with consistent styling
+Architectural Diagram
+
+It simplifies HR workflows by:
+Providing guided input with clarifying questions (salary, skills, timelines).
+Automatically generating outputs:
+Markdown-formatted job descriptions.
+Week-by-week hiring checklists.
+Internal recruitment emails.
+Using agentic AI with LangGraph’s stateful workflow to break tasks into steps, retry missing info, and fall back to Google Search when needed.
+
+Agentic Components:
+
+LangGraph:
+Defines step-by-step workflow (StateGraph).
+Acts as a finite-state planner.
+
+AgentState:
+Shared memory across steps.
+Ensures continuity between actions.
+
+Prompt-driven Nodes:
+Each task (JD, checklist, email) is a reasoning step.
+Enables modular autonomy.
+
+Fallback Search:
+Queries Google if LLM fails.
+Uses external tools for robustness.
+
+Clarification Logic:
+Detects missing data and reprompts.
+Self-monitoring capability.
 
 
-Tech Stack
-Language model: OpenAI GPT via LangChain
-Workflow orchestration: LangGraph using StateGraph for multi-node execution
-Frontend: Streamlit with custom CSS for layout and styling
-Search fallback: Google Search using LangChain's community wrapper
-Email writer: Templated function to send across teams
