@@ -34,5 +34,29 @@ Clarification Logic:
 Detects missing data and reprompts.
 Self-monitoring capability.
 
+Installation & Setup
+
+# Clone the repo
+https://github.com/mugilsuga07/HR-AI-ASSISTANT.git
+
+cd HR-AI-ASSISTANT
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit app
+
+streamlit run streamlit_app.py
+
+
+Environment Variables
+
+Create a .env file and add:
+
+OPENAI_API_KEY=your_openai_key
+
+GOOGLE_API_KEY=your_google_api_key
+
+GOOGLE_CSE_ID=your_google_cse_id
 
 
