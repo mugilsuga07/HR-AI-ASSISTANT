@@ -4,9 +4,7 @@ Mugil is an interactive, AI-driven tool designed to automate and streamline the 
 
 Link to the the app: https://hr-ai-assistant-gybgrfun6na2nftufi7sgf.streamlit.app
 
-Architectural Diagram
-
-It simplifies HR workflows by:
+AI Hiring Assistant Workflow:
 Providing guided input with clarifying questions (salary, skills, timelines).
 Automatically generating outputs:
 Markdown-formatted job descriptions.
