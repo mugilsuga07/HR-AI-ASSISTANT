@@ -2,6 +2,8 @@ Mugil: AI-Powered Hiring Assistant
 
 Mugil is an interactive, AI-driven tool designed to automate and streamline the hiring process for HR professionals, especially in startups and tech environments. Built with OpenAI and LangChain, and orchestrated via LangGraph, it generates job descriptions, hiring checklists, and recruitment emails through an intelligent, agentic workflow.
 
+Link to the the app: https://hr-ai-assistant-gybgrfun6na2nftufi7sgf.streamlit.app
+
 Architectural Diagram
 
 It simplifies HR workflows by:
@@ -33,5 +35,6 @@ Uses external tools for robustness.
 Clarification Logic:
 Detects missing data and reprompts.
 Self-monitoring capability.
+
 
 
